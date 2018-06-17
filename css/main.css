@@ -1,0 +1,721 @@
+.active-red {
+  color: red;
+}
+
+body{
+	background-image: url(../img/0.jpg);
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-color: #464646;
+
+	transition: 1s;
+}
+
+.no_left_padding{
+	padding-left: 0px;
+}
+
+.clear{
+	clear: both;
+}
+
+a:hover, .accent{
+	color: #997ea4 !important;
+}
+
+nav-link:active{
+	color: #997ea4 !important;
+}
+
+a{
+	color: #fff !important;
+}
+
+.red{
+	color: #cc161c;
+}
+
+@font-face {
+	font-family: 'impactreg';
+	src: url('./impactreg.eot');
+	src: local('impactreg'), url(../fonts/impact/impactreg.woff) format('woff'), url(../fonts/impact/impactreg.ttf) format('truetype');
+}
+
+nav.navigation-bg{
+	background: rgba(0,0,0,0.7);
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 11pt;
+}
+
+#slogan{
+	margin-top: 60px;
+	font-size: 50pt;
+	padding: 0px;
+	font-family: 'impactreg';
+	text-transform: uppercase;
+	color: #000;
+}
+
+#slogan li{
+	list-style-type: none;
+	background-color: #fff;
+	display: inline;
+	padding: .3rem;
+}
+
+.btn-main{
+	margin-top: 20pt;
+	max-width: 30%;
+	min-width: 30%;
+	color: white;
+	/*border: 1px solid white;*/
+	margin-right: 5%;
+	padding: 10pt;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #997ea4;
+}
+
+.btn-main:hover{
+	/*background-color: #997ea4;*/
+	color: white !important;
+}
+
+.footer{
+	color: #fff;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	background: rgba(0,0,0,0.7);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.footer-text:hover, .footer a:hover{
+	color: accent;
+	text-decoration: none;
+}
+
+.social{
+	font-size: 20pt;
+}
+
+/* GLOBAL SHAPERS */
+.shapers{
+	margin-top: 60px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-shapers{
+	background-color: #997ea4;;
+	color: #fff;
+	border-bottom: 3px solid yellow;
+	padding: 10pt;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 40%;
+	margin-left: 40%;
+}
+
+.btn-shapers:hover{
+	background-color: #cc161c;;
+}
+
+.shapers-logo{
+
+}
+
+.global_shapers_text_block{
+	margin-top: 20px;
+	color: #fff;
+}
+
+.global_shapers_header{
+	background-color: #000;
+	color: #fff;
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.global_shapers_text{
+	padding: 1rem;
+	font-size: 1.2rem;
+	font-family: 'Philosopher', sans-serif;
+}
+
+/* HOW IT WORKS */
+.works{
+	padding-top: 50px;
+}
+
+.how_it_works_header{
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.how_it_works_text_block{
+	margin-top: 20px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 2rem 7rem;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.how_it_works_text_block_header{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	font-family: 'Philosopher', sans-serif;
+	/* font-weight: bold; */
+}
+
+.how_it_works_image_header{
+	text-align: center;
+	font-size: 1rem;
+	margin-top: 1rem;
+	font-family: 'Philosopher', sans-serif;
+	font-weight: bold;
+}
+
+.images_row{
+	margin: 50px 0px;
+}
+
+.how_it_works_text_block_text{
+	margin-top: 70px;
+	font-size: 1.5rem;
+	text-align: justify;
+	font-family: 'Philosopher', sans-serif;
+}
+
+/* want to help */
+
+/* want to help */
+#vkladki{
+	background: #000;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem;
+	max-width: 750px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: none;
+}
+
+#vkladki a {
+	color: #fff;
+}
+
+#vkladki a:hover {
+	color: #8e7699;
+}
+
+#vkladki li{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#vkladki li a{
+	background-color: rgba(0,0,0,1);
+	border: none;
+}
+
+.intersnoe_text1{
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 20px 10px;
+	text-align: justify;
+}
+
+.my_card{
+	/* background-color: rgba(0,0,0,0.5); */
+
+	/* background-image: url(../img/about_charity_2.jpg);
+	 	background-repeat: no-repeat;
+	 	background-size: 100%; */
+
+	width: 30%;
+	height: 280px;
+
+	float: left;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.my_card2{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	min-height: 280px;
+	float: left;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* .want_to_help_image{
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 7px; /* Отступы вокруг картинки */
+} */
+
+.my_card:hover{
+	border: 0.1px solid #997ea4;
+}
+
+
+.my_card2:hover{
+	border: 0.5px solid #997ea4;
+}
+
+.card_inner_text{
+	margin: 40px 40px;
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+
+.column{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.want_to_help_wrapper{
+	color: white;
+	overflow: hidden;
+	font-family: 'Philosopher', sans-serif;
+}
+
+
+#control_button1{
+	color: #fff;
+	background: rgba(255,255,255,0.5);
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	cursor: pointer;
+}
+
+#control_button2{
+	color: #fff;
+	background: rgba(255,255,255,0.5);
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	cursor: pointer;
+}
+
+#control_button1:hover{
+	background: #8e7699;
+	color: #fff;
+}
+
+#control_button2:hover{
+	background: #8e7699;
+	color: #fff;
+}
+
+/* интересное о добре */
+
+
+.about_charity_wrapper{
+		margin-top: 60px;
+		color: #fff;
+}
+
+.about_charity_text_block{
+		margin-top: 20px;
+		background-color: rgba(0,0,0,0.7);
+		padding: 2rem;
+		font-size: 1.5rem;
+}
+
+.about_charity_text_block_header{
+	background-color: rgba(0,0,0,.9);
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-family: 'Philosopher', sans-serif;
+
+}
+
+.about_charity_text_block_text{
+	background-color: rgba(0,0,0,.7);
+	padding: 2rem;
+	font-size: 1rem;
+	text-align: justify;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.image_left{
+	float: left;
+	margin-right: 1rem;
+}
+
+.image_right{
+	float: right;
+	margin-left: 1rem;
+}
+
+.btn-contacts{
+	margin-top: 10pt;
+	color: white;
+	/*border: 1px solid white;*/
+	padding: .5rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #997ea4;
+}
+
+.btn-contacts:hover{
+	background-color: #997ea4;
+	color: white !important;
+}
+
+.contacts_header{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form_input{
+	width: 100%;
+	font-size: .8rem;
+	padding: .5rem;
+}
+
+/* кнопки управления */
+#control_button1{
+	color: #fff;
+	background: rgba(255,255,255,0.5);
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	cursor: pointer;
+}
+
+#control_button2{
+	color: #fff;
+	background: rgba(255,255,255,0.5);
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	cursor: pointer;
+}
+
+#control_button1:hover{
+	background: #8e7699;
+	color: #fff;
+}
+
+#control_button2:hover{
+	background: #8e7699;
+	color: #fff;
+}
+
+/* НАСТРОЙКА АДАПТИВНОСТИ */
+
+@media screen and (max-width: 1024px) {
+	.navigation-bg{
+		font-size: 11pt;
+	}
+
+	#slogan{
+		margin-top: 100px;
+		font-size: 80pt;
+	}
+
+	.btn-main{
+		max-width: 35%;
+		min-width: 35%;
+		margin-right: 10%;
+		margin-top: 25px;
+	}
+
+	.footer{
+		margin-top: 100px;
+	}
+
+	.burger{
+		font-size: 15pt;
+	}
+
+	/* GLOBAL SHAPERS */
+
+	.shapers{
+		margin-top: 120px;
+		margin-bottom: 150px;
+	}
+
+	.btn-shapers{
+		padding: 5pt;
+		margin-top: 30%;
+		margin-left: 0;
+		font-size: 5pt;
+	}
+
+	.global_shapers_header{
+		font-size: 10pt;
+	}
+
+	.global_shapers_text_block{
+		margin-top: 50px;
+	}
+
+	.shapers-logo{
+
+	}
+
+	/* contacts */
+	.about_charity_wrapper{
+		margin-top: 150px;
+	}
+
+	.contacts_header{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.about_charity_text_block_text{
+		margin-bottom: 200px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#slogan{
+		margin-top: 100px;
+
+	}
+
+	.btn-main{
+		max-width: 35%;
+		min-width: 35%;
+		margin-right: 10%;
+		margin-top: 25px;
+	}
+
+	.footer{
+		margin-top: 100px;
+	}
+
+	.burger{
+		font-size: 15pt;
+	}
+
+	/* Global shapers */
+	.btn-shapers{
+		margin-left: 30%;
+	}
+
+	.about_charity_wrapper{
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 100px;
+	}
+
+	/* contacts */
+	.contacts_header{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.about_charity_text_block_text{
+		padding-top: 10px;
+		margin-bottom: 100px;
+	}
+}
+/*
+@media screen and (max-width: px) {
+
+} */
+
+@media screen and (max-width: 420px) {
+	.navigation-bg{
+		font-size: 8pt;
+	}
+
+	#logo{
+		width: 100px;
+	}
+
+	#slogan{
+		margin-top: 80px;
+		font-size: 33pt;
+	}
+
+	.btn-main{
+		font-size: 8pt;
+		padding: 3pt;
+		max-width: 40%;
+		min-width: 40%;
+		margin-right: 5%;
+		margin-top: 25px;
+	}
+
+	.footer{
+		margin-top: 80px;
+		margin-bottom: 10px;
+		background: rgba(0,0,0,0.7);
+		padding-top: 5px;
+	}
+
+	.footer-text, .footer-header{
+		line-height: 1.3;
+		font-size: 10pt;
+	}
+
+	.burger{
+		font-size: 8pt;
+	}
+
+	/* GLOBAL SHAPERS */
+
+	.shapers{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.global_shapers_header{
+		font-size: 10pt;
+	}
+
+	.global_shapers_text_block{
+		margin-top: 20px;
+		font-size: 10pt;
+	}
+
+	.global_shapers_text{
+		font-size: 10pt;
+	}
+
+	.shapers-logo{
+
+	}
+
+	/* HOW IT WORKS */
+
+	div.col-2{
+		padding: 0;
+	}
+
+	.how_it_works_header{
+		font-size: 1rem;
+		padding: .5rem;
+	}
+
+	.how_it_works_text_block{
+		padding: 1rem;
+	}
+
+	.how_it_works_text_block_header{
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
+
+	.how_it_works_image_header{
+		font-size: .4rem;
+		margin-top: 1rem;
+	}
+
+	.images_row{
+		margin: 30px 0px;
+	}
+
+	.how_it_works_text_block_text{
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
+
+	/* want to help */
+	#vkladki{
+		padding: .1rem;
+		margin: 0 auto;
+		margin-top: 20px;
+		font-size: .6rem;
+	}
+
+	.my_card{
+		width: 100%;
+	}
+
+	.my_card2{
+		width: 100%;
+	}
+
+	.card_inner_text{
+		margin: 1rem;
+	}
+
+	.column{
+		line-height: 1.2rem;
+		margin-right: 2%;
+		width: 46%;
+	}
+
+	/* интересное о добре */
+	.about_charity_text_block_header{
+		padding: .5rem;
+		font-size: 1rem;
+	}
+
+	.about_charity_text_block_text{
+		padding: .5rem;
+		font-size: 1rem;
+	}
+
+	/* contacts */
+	.contacts_header{
+		padding: 1rem;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+
+	.contacts_text{
+		padding: 1rem;
+		padding-top: 0;
+	}
+	form{
+		padding: 0.5rem;
+	}
+
+	/* contacts */
+	.about_charity_wrapper{
+		margin-top: 50px;
+	}
+
+	.about_charity_text_block_text{
+		padding-top: 10px;
+		margin-bottom: 0px;
+	}
+}
