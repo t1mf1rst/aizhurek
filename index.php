@@ -33,7 +33,7 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 				 else n = n + 1;
 				 element.style.backgroundImage = 'url("' + path + n + '.jpg")';
 
-			 }, 5000);
+			 }, 10000);
 </script>
 
 <?php

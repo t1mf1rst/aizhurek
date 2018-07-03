@@ -76,28 +76,33 @@ include_once "header.php";
                         /*foreach ($rowIterator as $row) {*/
                         for ($i = 2; $i <= $sheet->getHighestRow(); $i++) {
                             if ($sheet->getCellByColumnAndRow(1,$i)->getValue()){
+                                //echo '<div class="my_card">
+                                //                <!-- <div class="card_inner_text">Фонд помощи детям инвалидам "Аяла"</div> -->
+                              //                  <img src="img/default1.jpg" width="100%" height="100%">
+                                //</div>';
                                 echo '<div class="my_card2">
-                                                <div class="card_inner_text">
-                                                  <img src="img/default1.jpg" width="10%" height="10%" class="want_to_help_image">
-                                                  <h5>' . $sheet->getCellByColumnAndRow(1,$i)->getValue() . '</h5>';
-                                           echo '<div class="column">';
-                                if( null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   '; echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>';}
+                                                <div class="card_inner_text"><img src="img/default1.jpg" width="10%" height="10%" class="want_to_help_image">
+                                                    <h5>' . $sheet->getCellByColumnAndRow(1,$i)->getValue() . '</h5>';
+                                echo '<div class="column">
+                                                        ';
+                                if( null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   ';  echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>';}
 
-                                if( null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>';}
+                                if( null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>'; }
 
-                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i>   <span class="accent">'; echo $sheet->getCellByColumnAndRow(8,$i)->getValue();}
+                                if( null !=  $sheet->getCellByColumnAndRow(4,$i)->getValue() ) { echo '<i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue(); echo '</span></a>'; }
 
-                                if( null != $sheet->getCellByColumnAndRow(4,$i)->getValue() ) {echo '</span><br><i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue();}
-                                echo '</span></a>
-                                                    </div>
-                                                    <div class="column">';
+
+                                echo '</div><div class="column">';
+
                                 if( null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>';}
 
-                                if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ){ echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>';}
+                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>';}
 
-                                echo '
-                                                    </div>
-                                                    <div class="clear"></div>
+                                /*if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }*/
+
+
+
+                                echo '</div><div class="clear"></div>
                                                     <h6 style="text-align: left;"><i class="fas fa-bullseye"></i>   ';
                                 echo $sheet->getCellByColumnAndRow(3,$i)->getValue();
                                 echo '</h6>
@@ -141,8 +146,6 @@ include_once "header.php";
 
                                 if( null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>'; }
 
-                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>';}
-
                                 if( null !=  $sheet->getCellByColumnAndRow(4,$i)->getValue() ) { echo '<i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue(); echo '</span></a>'; }
 
 
@@ -150,7 +153,9 @@ include_once "header.php";
 
                                 if( null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>';}
 
-                                if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }
+                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>';}
+
+                                /*if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }*/
 
 
 
@@ -183,30 +188,38 @@ include_once "header.php";
                         // Получили строки и обойдем их в цикле
                         $rowIterator = $sheet->getRowIterator();
 
+                        /*foreach ($rowIterator as $row) {*/
                         for ($i = 2; $i <= $sheet->getHighestRow(); $i++) {
                             if ($sheet->getCellByColumnAndRow(1,$i)->getValue()){
+                                //echo '<div class="my_card">
+                                //                <!-- <div class="card_inner_text">Фонд помощи детям инвалидам "Аяла"</div> -->
+                              //                  <img src="img/default1.jpg" width="100%" height="100%">
+                                //</div>';
                                 echo '<div class="my_card2">
                                                 <div class="card_inner_text"><img src="img/default1.jpg" width="10%" height="10%" class="want_to_help_image">
                                                     <h5>' . $sheet->getCellByColumnAndRow(1,$i)->getValue() . '</h5>';
-                                echo '<div class="column">';
-                                if( null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   '; echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>'; }
+                                echo '<div class="column">
+                                                        ';
+                                if( null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   ';  echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>';}
 
                                 if( null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>'; }
 
-                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>'; }
-
                                 if( null !=  $sheet->getCellByColumnAndRow(4,$i)->getValue() ) { echo '<i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue(); echo '</span></a>'; }
+
 
                                 echo '</div><div class="column">';
 
-                                if( null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>'; }
+                                if( null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>';}
 
-                                if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }
+                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>';}
+
+                                /*if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }*/
+
 
 
                                 echo '</div><div class="clear"></div>
-                                                    <h6 style="text-align: left;">';
-                                if( null != $sheet->getCellByColumnAndRow(3,$i)->getValue() ) { echo '<i class="fas fa-bullseye"></i>   '; echo $sheet->getCellByColumnAndRow(3,$i)->getValue(); }
+                                                    <h6 style="text-align: left;"><i class="fas fa-bullseye"></i>   ';
+                                echo $sheet->getCellByColumnAndRow(3,$i)->getValue();
                                 echo '</h6>
                                                 </div>
                                             </div>
@@ -233,31 +246,42 @@ include_once "header.php";
                         // Получили строки и обойдем их в цикле
                         $rowIterator = $sheet->getRowIterator();
 
+                        /*foreach ($rowIterator as $row) {*/
                         for ($i = 2; $i <= $sheet->getHighestRow(); $i++) {
                             if ($sheet->getCellByColumnAndRow(1,$i)->getValue()){
+                                //echo '<div class="my_card">
+                                //                <!-- <div class="card_inner_text">Фонд помощи детям инвалидам "Аяла"</div> -->
+                              //                  <img src="img/default1.jpg" width="100%" height="100%">
+                                //</div>';
                                 echo '<div class="my_card2">
                                                 <div class="card_inner_text"><img src="img/default1.jpg" width="10%" height="10%" class="want_to_help_image">
                                                     <h5>' . $sheet->getCellByColumnAndRow(1,$i)->getValue() . '</h5>';
-                                echo '<div class="column">';
-                                if(null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   '; echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>'; }
+                                echo '<div class="column">
+                                                        ';
+                                if( null != $sheet->getCellByColumnAndRow(5,$i)->getValue() ) { echo '<i class="fas fa-user"></i>   ';  echo $sheet->getCellByColumnAndRow(5,$i)->getValue(); echo '<br>';}
 
-                                if(null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>'; }
+                                if( null != $sheet->getCellByColumnAndRow(6,$i)->getValue() ) { echo '<i class="fas fa-map-marker-alt"></i>   '; echo $sheet->getCellByColumnAndRow(6,$i)->getValue(); echo '<br>'; }
 
-                                if(null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>'; }
-
-                                if(null != $sheet->getCellByColumnAndRow(4,$i)->getValue() ) { echo '<i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue(); echo '</span></a>'; }
+                                if( null !=  $sheet->getCellByColumnAndRow(4,$i)->getValue() ) { echo '<i class="fas fa-globe"></i>   <a href="index.php" class="white" target="blank"><span class="accent">   '; echo $sheet->getCellByColumnAndRow(4,$i)->getValue(); echo '</span></a>'; }
 
 
                                 echo '</div><div class="column">';
-                                if(null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>'; }
 
-                                if(null != $sheet->getCellByColumnAndRow(2,$i)->getValue()) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue();  echo '<br>'; }
+                                if( null != $sheet->getCellByColumnAndRow(7,$i)->getValue() ) { echo '<i class="fas fa-phone"></i>   '; echo $sheet->getCellByColumnAndRow(7,$i)->getValue(); echo '<br>';}
+
+                                if( null != $sheet->getCellByColumnAndRow(8,$i)->getValue() ) { echo '<i class="fas fa-envelope-square"></i><span class="accent">   '; echo $sheet->getCellByColumnAndRow(8,$i)->getValue(); echo '</span><br>';}
+
+                                /*if( null != $sheet->getCellByColumnAndRow(2,$i)->getValue() ) { echo '<i class="fas fa-info-circle"></i>   '; echo $sheet->getCellByColumnAndRow(2,$i)->getValue(); echo '<br>'; }*/
 
 
-                                echo '</div><div class="clear"></div><h6 style="text-align: left;">';
-                                if(null != $sheet->getCellByColumnAndRow(3,$i)->getValue() ) { echo '<i class="fas fa-bullseye"></i>'; echo $sheet->getCellByColumnAndRow(3,$i)->getValue(); }
 
-                                echo '</h6></div></div><div class="clear"></div>';
+                                echo '</div><div class="clear"></div>
+                                                    <h6 style="text-align: left;"><i class="fas fa-bullseye"></i>   ';
+                                echo $sheet->getCellByColumnAndRow(3,$i)->getValue();
+                                echo '</h6>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>';
                             }
                         }
                     ?>

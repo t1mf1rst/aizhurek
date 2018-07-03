@@ -9,16 +9,6 @@
 					</div>
 					<div class="footer-text">
 						<a href="https://www.globalshapers.org/" target="blank">www.globalshapers.org</a><br>
-						<a href="http://solex.kz/" target="blank">solex.kz</a><br>
-						<a href="mailto:a.kayirbek@gmail.com">a.kayirbek@gmail.com</a>
-					</div>
-				</div>
-				<div class="col-6 col-lg-3">
-					<div class="footer-header accent">
-						Наш телефон:
-					</div>
-					<div class="footer-text">
-						<a href="tel:+77077077777">+7 707 707 77 77</a>
 					</div>
 				</div>
 				<div class="col-6 col-lg-3">
@@ -36,6 +26,8 @@
 					<div class="footer-text social">
 						<a href="index.php" target="blank"><span class=""><i class="fab fa-facebook"></i></span></a>
 					</div>
+				</div>
+				<div class="col-6 col-lg-3">
 					<div class="footer-header accent">
 						Поделиться в соц сетях:
 					</div>
